@@ -57,9 +57,9 @@ function RoleForm({ obj }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (obj.id) {
-      updateRole({ ...formInput, tourCategories: selectedOrganizations }).then(() => router.push('/'));
+      updateRole({ ...formInput, organizationRoles: selectedOrganizations }).then(() => router.push('/'));
     } else {
-      const payload = { ...formInput, user: user.id, tourOrganizations: selectedOrganizations };
+      const payload = { ...formInput, user: user.id, organizationRoles: selectedOrganizations };
       createRole(payload).then(() => router.push('/'));
     }
   };

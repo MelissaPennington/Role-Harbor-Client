@@ -33,7 +33,7 @@ const DropDown = ({ existingOrganizations }) => {
 
   useEffect(() => {
     setSelectedOrganizations(selected);
-  }, [selected]);
+  }, [selected, setSelectedOrganizations]);
 
   useEffect(() => {
     if (existingOrganizations.length > 0) {

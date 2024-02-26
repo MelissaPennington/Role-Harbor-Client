@@ -39,15 +39,6 @@ export default function ViewRole() {
       </div>
       <div>
         {/* <Card style={{
-          width: '20rem', margin: '10px', backgroundColor: '#cbbaa6', color: '#605d50',
-        }}
-        >
-          <CommentForm tourObj={tourDetails} setTourObj={setTourDetails} />
-          <div className="d-flex flex-wrap"> Comments:
-            {tourDetails?.comments?.map((comment) => (
-              <CommentCard key={comment.id} comment={comment} />
-            ))}
-          </div>
         </Card> */}
       </div>
     </div>
