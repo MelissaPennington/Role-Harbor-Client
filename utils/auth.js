@@ -30,6 +30,19 @@ const registerUser = (userInfo) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+const updateUser = (userInfo) => new Promise((resolve, reject) => {
+  fetch(`${clientCredentials.databaseURL}/users/${userInfo.id}`, {
+    method: 'PUT',
+    body: JSON.stringify(userInfo),
+    headers: {
+      'Content-Type': 'application/json',
+      Accept: 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => resolve(data))
+    .catch(reject);
+});
 const signIn = () => {
   const provider = new firebase.auth.GoogleAuthProvider();
   firebase.auth().signInWithPopup(provider);
@@ -44,4 +57,5 @@ export {
   signOut,
   checkUser,
   registerUser,
+  updateUser
 };
