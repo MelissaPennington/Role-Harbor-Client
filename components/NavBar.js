@@ -20,7 +20,7 @@ export default function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             {/* CLOSE NAVBAR ON LINK SELECTION: https://stackoverflow.com/questions/72813635/collapse-on-select-react-bootstrap-navbar-with-nextjs-not-working */}
-            <Link passHref href="/Roles">
+            <Link passHref href="/">
               <Nav.Link>Roles</Nav.Link>
             </Link>
             <Link passHref href="/userRoles">

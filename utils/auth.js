@@ -57,5 +57,5 @@ export {
   signOut,
   checkUser,
   registerUser,
-  updateUser
+  updateUser,
 };

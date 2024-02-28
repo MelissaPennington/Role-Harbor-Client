@@ -39,7 +39,7 @@ const getSingleOrganization = (id) => new Promise((resolve, reject) => {
 });
 
 const createOrganization = (payload) => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/categories`, {
+  fetch(`${endpoint}/organizations`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

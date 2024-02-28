@@ -15,7 +15,7 @@ const getRoles = () => new Promise((resolve, reject) => {
 });
 
 const getRoleById = (id) => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/roless?userId=${id}`, {
+  fetch(`${endpoint}/?userId=${id}`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
