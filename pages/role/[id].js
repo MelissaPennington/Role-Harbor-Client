@@ -11,7 +11,7 @@ export default function ViewRole() {
   useEffect(() => {
     getSingleRole(id).then(setRoleDetails);
   }, [id]);
-  console.warn('', roleDetails);
+  // console.warn('', roleDetails);
 
   return (
     <div className="view-role">
