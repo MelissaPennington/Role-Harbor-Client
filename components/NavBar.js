@@ -14,7 +14,7 @@ export default function NavBar() {
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
         <Link passHref href="/">
-          <Navbar.Brand>ROLE HARBOR🚢</Navbar.Brand>
+          <Navbar.Brand>ROLE HARBOR</Navbar.Brand>
         </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -29,7 +29,9 @@ export default function NavBar() {
             <Link passHref href="/role/new">
               <Nav.Link>Create a Role</Nav.Link>
             </Link>
-            <Button variant="danger" onClick={signOut}>
+          </Nav>
+          <Nav className="ml-auto">
+            <Button variant="warning" onClick={signOut}>
               Sign Out
             </Button>
           </Nav>

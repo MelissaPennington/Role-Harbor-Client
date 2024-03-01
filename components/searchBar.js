@@ -9,11 +9,13 @@ const SearchBar = ({ setShowingRoles, roles }) => {
       if (role.name.toLowerCase().includes(e.target.value.toLowerCase())) {
         filteredRoles.push(role);
       }
-      if (role.organization.name.toLowerCase().includes(e.target.value.toLowerCase())) {
+
+      if (role.organization && role.organization.name.toLowerCase().includes(e.target.value.toLowerCase())) {
         if (!filteredRoles.find((element) => element.id === role.id)) {
           filteredRoles.push(role);
         }
       }
+
       role.organizations.forEach((organization) => {
         if (organization.name.toLowerCase().includes(e.target.value.toLowerCase())) {
           if (!filteredRoles.find((element) => element.id === role.id)) {
@@ -22,6 +24,7 @@ const SearchBar = ({ setShowingRoles, roles }) => {
         }
       });
     });
+
     setShowingRoles(filteredRoles);
   };
 

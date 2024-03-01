@@ -31,7 +31,7 @@ function Home() {
               <Button variant="btn-small btn-secondary">Add A Role</Button>
             </Link>
           </Card.Body>
-          <SearchBar setShowingRoles={setShowingRoles} showingTours={showingRoles} roles={roles} />
+          <SearchBar setShowingRoles={setShowingRoles} showingRoles={showingRoles} roles={roles} />
         </Card>
       </center>
       <div className="d-flex flex-sm-wrap" id="role-card-index">
