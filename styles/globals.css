@@ -19,7 +19,7 @@ a {
 }
 
 body {
-  background-color: #605d50;
+  background-color: #7367ca;
 }
 
 .organization-role {
@@ -53,7 +53,7 @@ input[type=text]:focus {
   margin: 10px;
   max-height: 750px;
   background-color: #7367ca;
-  color: #605d50;
+  color: #efe464;
 }
 
 #role-card-index {
@@ -67,10 +67,15 @@ input[type=text]:focus {
   flex-wrap: wrap;
 }
 
+#user-roles-cards-style {
+  background-color: #7367ca;
+  color: #efe464;
+}
+
 #intro-card {
   /* max-width: 1040px; */
   color: #0b0b0a;
-  background-image: url("https://totenart.com/noticias/wp-content/uploads/2015/06/totenart-cabecera-cuantos-colores-ves.jpg");
+  background-image: url("https://img.freepik.com/free-vector/colorful-watercolor-background_23-2148492944.jpg?w=1800&t=st=1709396651~exp=1709397251~hmac=6eab24603001c700a39b5adddcc448f3870ba09f9cc38d9a65d3d67547c93af2");
    background-color: #0d0c0c;
 };
 

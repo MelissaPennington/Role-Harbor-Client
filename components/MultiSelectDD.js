@@ -16,7 +16,7 @@ const MultiSelectDropdown = ({ options, selected, toggleOption }) => (
         return (
           <div key={option.name}>
             <FloatingLabel className="c-multi-select-dropdown__option" onClick={() => toggleOption({ id: option.id })}>
-              <input type="checkbox" checked={isSelected} className="c-multi-select-dropdown__option-checkbox" />
+              <input type="checkbox" onChange={() => ''} checked={isSelected} className="c-multi-select-dropdown__option-checkbox" />
               <span>{option.name}</span>
             </FloatingLabel>
           </div>

@@ -44,7 +44,10 @@ SearchBar.propTypes = {
       name: PropTypes.string,
       description: PropTypes.string,
       boss: PropTypes.string,
-      equipment: PropTypes.string,
+      equipment: PropTypes.shape({
+        id: PropTypes.number,
+        name: PropTypes.string,
+      }),
       id: PropTypes.number,
       organizations: PropTypes.arrayOf(
         PropTypes.shape({
