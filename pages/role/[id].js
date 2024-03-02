@@ -29,7 +29,7 @@ export default function ViewRole() {
               <ListGroupItem> Equipment: {roleDetails?.equipment?.name} </ListGroupItem>
               <ListGroupItem> Boss: {roleDetails?.boss} </ListGroupItem>
               <ListGroupItem> Organizations: {roleDetails?.organizations?.map((organization) => (
-                <p>{organization.name}
+                <p key={organization.id}>{organization.name}
                 </p>
               ))}
               </ListGroupItem>

@@ -30,12 +30,11 @@ function RoleCard({ roleObj, onUpdate }) {
             Boss: {roleObj.boss}
           </ListGroupItem>
           <ListGroupItem> Organizations: {roleObj?.organizations?.map((organization) => (
-            <p>{organization.name}
-            </p>
+            <p key={organization.id}>{organization.name}</p>
           ))}
           </ListGroupItem>
         </ListGroup>
-        { user.id === roleObj.user.id ? (
+        {user && user.id && roleObj.user && roleObj.user.id && user.id === roleObj.user.id ? (
           <>
             <Link href={`/role/edit/${roleObj.id}`} passHref>
               <Button variant="light">EDIT</Button>
@@ -54,7 +53,6 @@ function RoleCard({ roleObj, onUpdate }) {
         )}
       </Card.Body>
     </Card>
-
   );
 }
 
@@ -64,7 +62,10 @@ RoleCard.propTypes = {
     boss: PropTypes.string,
     description: PropTypes.string,
     id: PropTypes.number,
-    equipment: PropTypes.string,
+    equipment: PropTypes.shape({
+      id: PropTypes.number,
+      name: PropTypes.string,
+    }),
     organizations: PropTypes.arrayOf(
       PropTypes.shape({
         id: PropTypes.number,

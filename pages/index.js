@@ -31,7 +31,7 @@ function Home() {
               <Button variant="btn-small btn-secondary">Add A Role</Button>
             </Link>
           </Card.Body>
-          <SearchBar setShowingRoles={setShowingRoles} showingTours={showingRoles} roles={roles} />
+          <SearchBar setShowingRoles={setShowingRoles} showingRoles={showingRoles} roles={roles} />
         </Card>
       </center>
       <div className="d-flex flex-sm-wrap" id="role-card-index">
@@ -45,30 +45,3 @@ function Home() {
 }
 
 export default Home;
-
-// import { Button } from 'react-bootstrap';
-// import { signOut } from '../utils/auth';
-// import { useAuth } from '../utils/context/authContext';
-
-// function Home() {
-//   const { user } = useAuth();
-//   return (
-//     <div
-//       className="text-center d-flex flex-column justify-content-center align-content-center"
-//       style={{
-//         height: '90vh',
-//         padding: '30px',
-//         maxWidth: '400px',
-//         margin: '0 auto',
-//       }}
-//     >
-//       <h1>Hello {user.fbUser.displayName}! </h1>
-//       <p>Click the button below to logout!</p>
-//       <Button variant="danger" type="button" size="lg" className="copy-btn" onClick={signOut}>
-//         Sign Out
-//       </Button>
-//     </div>
-//   );
-// }
-
-// export default Home;
