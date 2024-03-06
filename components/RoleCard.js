@@ -17,6 +17,7 @@ function RoleCard({ roleObj, onUpdate }) {
 
   return (
     <Card id="role-card-style">
+      <Card.Img variant="top" src={roleObj.image} alt={roleObj.name} style={{ minHeight: '250px' }} />
       <Card.Body id="role-card-description">
         <Card.Title>{roleObj.name} </Card.Title>
         <ListGroup>
@@ -59,6 +60,7 @@ function RoleCard({ roleObj, onUpdate }) {
 RoleCard.propTypes = {
   roleObj: PropTypes.shape({
     name: PropTypes.string,
+    image: PropTypes.string,
     boss: PropTypes.string,
     description: PropTypes.string,
     id: PropTypes.number,
