@@ -12,6 +12,7 @@ import DropDownSelectedContext from '../../utils/context/dropDownSelectedContext
 
 const initialState = {
   name: '',
+  image: '',
   description: '',
   boss: '',
   equipment: {},
@@ -120,6 +121,17 @@ function RoleForm({ obj }) {
               placeholder="Boss"
               name="boss"
               value={formInput.boss}
+              onChange={handleChange}
+              required
+            />
+          </FloatingLabel>
+
+          <FloatingLabel controlId="floatingInput2" label="Role Image" className="mb-3">
+            <Form.Control
+              type="url"
+              placeholder="Enter an image url"
+              name="image"
+              value={formInput.image}
               onChange={handleChange}
               required
             />
