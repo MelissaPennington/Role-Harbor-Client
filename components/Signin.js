@@ -17,11 +17,19 @@ function Signin() {
         paddingBlock: '0 5rem',
       }}
     >
-      <h1>Hi there!</h1>
-      <p>Click the button below to login!</p>
-      <Button type="button" size="lg" className="copy-btn" onClick={signIn}>
-        Sign In
-      </Button>
+      <h1 style={{ color: 'white' }}>Hi there!</h1>
+      <p style={{ color: 'white' }}>Click the button below to login!</p>
+      <div className="d-flex justify-content-center"> {/* Centering container */}
+        <Button
+          type="button"
+          size="lrg"
+          className="copy-btn"
+          onClick={signIn}
+          style={{ width: '150px' }} // Set a fixed width for the button
+        >
+          Sign In
+        </Button>
+      </div>
     </div>
   );
 }
