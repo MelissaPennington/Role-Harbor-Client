@@ -17,7 +17,7 @@ export default function ViewRole() {
     <div className="view-role">
       <div>
         <Card style={{
-          width: '20rem', margin: '10px', backgroundColor: '#cbbaa6', color: '#605d50',
+          width: '20rem', margin: '10px', backgroundColor: '#7367ca', color: '#efe464',
         }}
         >
 

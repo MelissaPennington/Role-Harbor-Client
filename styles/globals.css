@@ -91,25 +91,6 @@ input[type=text]:focus {
   background-color: #0d0c0c;
 }
 
-#intro-card {
-  /* max-width: 1040px; */
-  color: #0b0b0a;
-  background-image: linear-gradient(
-    45deg,
-    #ff8c00 0%,
-    #ff8c00 20%,
-    #ff6b2d 20%,
-    #ff6b2d 40%,
-    #ff4f58 40%,
-    #ff4f58 60%,
-    #ff2f8e 60%,
-    #ff2f8e 80%,
-    #ff007f 80%,
-    #ff007f 100%
-  );
-  background-color: #0d0c0c;
-};
-
 .view-role {
   display: flex;
   flex-direction: column;
