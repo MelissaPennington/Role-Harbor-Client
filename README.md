@@ -16,7 +16,7 @@ Django
 React JavaScript
 
 Installation
-Clone the repository: git clone <repository-url>
+Clone the repository: git clone https://github.com/MelissaPennington/Role-Harbor-Client
 Navigate to the backend directory: cd backend
 Install Django: pip install django
 Run migrations: python manage.py migrate
